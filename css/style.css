@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(204, 43%, 93%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'karla', sans-serif;
+    font-size: 16px;
+}
+
+main{
+    width: 730px;
+    height: 550px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: "section section"
+                          "left right";
+    grid-template-rows: 45% 55%;
+    overflow: hidden; 
+    box-shadow: 0 10px 10px 15px #00000009;                  
+}
+
+section{
+    grid-area: section;
+    background: white;
+    padding-left: 35px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+}
+
+h3{
+    color: hsl(71, 73%, 54%);
+    margin-top: 20px;
+}
+
+.gain-access{
+    opacity: 0.5;
+    line-height: 25px;
+}
+
+.left-div{
+    grid-area: left;
+    background: hsl(179, 62%, 43%);
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    padding-left: 35px;
+}
+
+.Monthly-sub{
+    font-weight: 700;    
+}
+
+.p29{
+    font-size: 35px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    margin-top: -25px;
+}
+
+.per-month{
+    opacity: 0.5;
+    position: absolute;
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: -70px;
+}
+
+.full-access{
+    margin-top: -30px;
+}
+
+button{
+    width: 80%;
+    height: 40px;
+    background: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    margin-top: -20px;
+    color: white;
+    font-family: 'karla', sans-serif;
+}
+
+.right-div{
+    grid-area: right;
+    background: hsl(178, 64%, 50%);
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    color: white;
+}
+
+.why-us{
+    margin-top: 10px;
+}
+
+.tutorials{
+    line-height: 22px;
+    color: hsl(204, 43%, 93%);
+}
+
+@media (max-width: 730px) {
+    main{
+        width: 70%;
+        height: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+                "section"
+                "left"
+                "right";
+
+    }
+}
