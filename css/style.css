@@ -23,6 +23,7 @@ main{
     grid-template-areas: "section section"
                           "left right";
     grid-template-rows: 45% 55%;
+    grid-template-columns: 50% 50%;
     overflow: hidden; 
     box-shadow: 0 10px 10px 15px #00000009;                  
 }
@@ -35,7 +36,6 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 h1{
@@ -127,6 +127,5 @@ button{
                 "section"
                 "left"
                 "right";
-
     }
 }
